@@ -28,15 +28,19 @@ Afterwards, the clusterProfiler package was used to characterize the transition 
 
 ## Results
 ### UMAP with Clusters (Resolution 0.5)
-![[Pasted image 20260421131841.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/53038690-61cc-423c-b895-6630cd0c2e93" />
+
 
 ### UMAP with Clusters (Resolution 0.4)
-![[Pasted image 20260421131509.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/08c5a2b8-6b8c-438a-b36f-5a0c60cc27fe" />
+
 **Figures 1 and 2:** UMAP clusters of cell populations by PCA. Figure 1 is included to show there is some degree of variation within each of clusters, though displays some over-mixing. Figure 2 shows a compromise preserving cluster identity while minimizing overmixing.
 
 ### Feature plots of top 10 genes by p_value for Cluster 1
-![[Pasted image 20260421145504.png]]
-![[Pasted image 20260421145516.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/e62d6376-3937-4066-a786-4ba0dc466695" />
+
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/ba3d9e5b-3b77-4b8c-9b53-e0c825473180" />
+
 **Figures 3 and 4:** Feature plots of 10 most significant markers of cluster 1, overlaid on UMAP. Intensity of purple indicates degree of expression. 
 
 C1qa, C1qb, C1qc, and Ms4a7 were the most specific predictors for Cluster 1. In the classical C1 pathway, C1q combined with C1s and C1r, forming the C1 complex. This binds to antigen-antibody complexes and activates the complement system of the immune response. (Venkatraman Girija et al., 2013)
@@ -49,7 +53,8 @@ Ctss codes for Cathepsin S, a cysteine protease secreted during inflammation, an
 
 A follow-up mapping of other C1 components was made to determine if the C1 pathway was being upregulated.
 ### Feature plots of other C1 complex components: 
-![[Pasted image 20260421161540.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/5bb14d21-e37e-4354-bfe0-efd24be3c686" />
+
 **Figure 5:** Feature plot of C1ra, C1s1, C1s2. C1rb plotting was attempted, but no match found.
 
 Significantly lower expression levels of other components of the C1 complex were displayed compared to C1qa-c. Additionally, what components were displayed were isolated to different clusters, indicating the C1 complex mechanism is not actively transcribed in Cluster 1, and the C1q sub-complex was being transcribed independently.
@@ -58,37 +63,48 @@ To clarify this shift between PC1 and PC2 in C1qa-c and Ms4a7, mapping of altern
 
 ### UMAP Plots of Sample Types
 
-![[Pasted image 20260421180922.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/57d27ecd-a0b2-4419-aa1a-66f34d84f97b" />
+
+
 **Figure 6:** Annotated UMAP of influenza infection status.
 
-![[Pasted image 20260421181941.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/2c69955e-0ecb-47e4-811b-d8aaddcce7a0" />
+
 **Figure 7:** Annotated UMAP of infection timeline. Label indicates days-post-infection of Influenza A virus.
 
-![[Pasted image 20260421182047.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/ea97be06-83db-4bd2-84c4-e1362bfcbdd0" />
+
 **Figure 8:** UMAP of tissue origin site. LNG = Lateral Nasal Gland. OM = Olfactory Mucosa. RM = Respiratory Mucosa.
 
 Overall, Seurat metadata was inconclusive. Some trends exist (such as the greater prevalence of RM in cluster 2), but not enough to explain the transition in an of itself.
 ### Enrichment Map: Transcript Activity by Linked GO terms
-![[Pasted image 20260421232636.png]]
+<img width="1840" height="1384" alt="image" src="https://github.com/user-attachments/assets/e71c99c1-6bc0-492e-ba40-51a6b8380cf1" />
+
 **Figure 9:** Enrichment map by GO-term linkage. Shows functional relations of altered gene expression between PC1 and PC2 in a wider biological context, grouping related terms together.
 
-![[Pasted image 20260421233217.png]]
-![[Pasted image 20260421233314.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/ba66e6c9-08c8-4ec4-8ede-91dcd2b99cd2" />
+
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/98eb5331-9807-4911-b6a7-6312de807a44" />
+
 **Figures 10 and 11:** Clarify upregulated activities in PC2 relative to PC1 in a gene ontology (Figure 10) and pathway context (Figure 11).
 
 Overall upregulation trends towards PC2: Increased leukocyte migration and chemotaxis. Cytokine-receptor interaction. Viral protein interaction with cytokines/receptors. MAPK/ERK signaling pathway activity. Lysosome biogenesis.
 
-![[Pasted image 20260421234920.png]]
-![[Pasted image 20260421234953.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/5c3bdaf5-5e1d-4579-a87a-163a007be418" />
+
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/dae9c539-dd07-467f-b31b-bca47d024c84" />
+
 **Figures 12 and 13**: Clarify downregulated activities in PC2 relative to PC1 in a gene ontology (Figure 12) and pathway context (Figure 13).
 
 Overall downregulation trends towards PC2: Lymphocyte activation regulation. Cell-adhesion, particularly in leukocytes. Leukocyte proliferation. Hallmarks of herpes virus infection. T cell proliferation.
 
 ### UMAP Feature Plots of Lymphocyte Markers:
-![[Pasted image 20260422003912.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/215f97d3-5070-46fd-8295-af3963448ee3" />
+
 **Figure 14:**  UMAP of Lymphocyte signaling markers. Itgam is a broad Lymphocyte marker. Bst2 marks for Plasmacytoid Dendritic Cells. Itgax marks for Conventional Dendritic Cells. Adgre1 marks for Macrophages. Cd14 marks for Monocytes. (NCBI, 2026)
 
-![[Pasted image 20260422012352.png]]
+<img width="1724" height="1194" alt="image" src="https://github.com/user-attachments/assets/b34478a8-9794-44d1-b231-9f0e02503bb9" />
+
 **Figure 15:** Other Macrophage M1 and M2 distinguishing markers. Cd38 labels M1, Arg1 and Egr2 label M2. (Jablonski et al., 2015)
 
 While Adgre1 indicated a strong macrophage signal, subsequent macrophage-specific markers have only offered partial confirmation.
